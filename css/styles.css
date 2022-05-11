@@ -307,3 +307,13 @@ footer {
 		opacity: 0.05;
 	}
 }
+
+@media screen and (max-width: 600px) {
+	.cursor--large {
+		display: none;
+	}
+
+	.cursor--small {
+		display: none;
+	}
+}

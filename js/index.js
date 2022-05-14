@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 			filter: 'blur(50px)',
 			mixBlendMode: 'lighten',
-			backgroundColor: 'rgba(255, 255, 255, 0.25)',
+			backgroundColor: 'rgba(255, 255, 255, .25)',
 		});
 
 		gsap.to(cursorInner, 0.2, {

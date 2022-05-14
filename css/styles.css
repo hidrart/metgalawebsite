@@ -62,8 +62,18 @@ article {
 	gap: 2em;
 }
 
+#theme article {
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
 @media screen and (max-width: 1200px) {
 	article {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	#theme article {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 	}
@@ -96,6 +106,20 @@ article {
 	position: relative;
 }
 
+#theme .image {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+	#theme .image {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2em;
+	}
+}
+
 .ornament {
 	width: 8em;
 	bottom: -2em;
@@ -126,9 +150,8 @@ article {
 .picture {
 	width: 100%;
 	height: 40em;
-
-	/* set picture to cover */
 	object-fit: cover;
+	object-position: top;
 }
 
 .cursor {
